@@ -1,0 +1,41 @@
+{
+    "name": "NetSuite-FTP",
+    "_connectorId": "",
+    "install": [
+        {
+            "imageURI": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "name": "NetSuite-Connector Connection",
+            "description": "Please Provide Netsuite Credentials",
+            "installerFunction": "netsuiteInstaller",
+            "_connectionId": ""
+        },
+        {
+            "imageURI": "/images/company-logos/ftp.png",
+            "completed": false,
+            "name": "FTP Connection",
+            "description": "Please Provide FTP Credentials",
+            "installerFunction": "ftpInstaller",
+            "_connectionId":""
+        }
+    ],
+    "mode":"install",
+    "settings":{
+        "sections":[
+            {
+                "title":"NS-FTP-Flows",
+                "imageURI": "/images/company-logos/netsuite.png",
+                "description":"This section contains NetSuite Customers in FTP connection",
+                "columns":1,
+                "flows":[
+                    {
+                        "_id":"",
+                        "showMapping":true,
+                        "showSchedule":true,
+                        "disabled":false
+                    }
+                ]
+            }
+        ]
+    }
+}

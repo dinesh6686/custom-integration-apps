@@ -1,0 +1,17 @@
+{
+  "name": "myconnector",
+  "version": "1.0.0",
+  "description": "Create a SmartConnector",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Dinesh",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.6.2",
+    "express-integrator-extension": "^0.2.4",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
