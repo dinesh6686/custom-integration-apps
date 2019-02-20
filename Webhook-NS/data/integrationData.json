@@ -1,0 +1,44 @@
+{
+    "name": "Webhook-NS",
+    "_connectorId": "",
+    "install": [
+        {
+            "imageURI": "/images/company-logos/webhook.png",
+            "completed": false,
+            "name": "Webhook-Connector Connection",
+            "description": "Please Provide Credentials",
+            "installerFunction": "webhookInstaller"
+        },
+        {
+            "imageURI": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "name": "NS Connection",
+            "description": "Please Provide Netsuite Credentials",
+            "installerFunction": "nsInstaller",
+            "_connectionId":""   
+        }
+    ],
+    "mode":"install",
+    "settings":{
+        "sections":[
+            {
+                "title":"Webhook-NS",
+                "description":"This section creates a custom record of customer in NetSuite",
+                "columns":1,
+                "flows":[
+                    {
+                        "_id":"",
+                        "showMapping":true,
+                        "showSchedule":true,
+                        "disabled":false
+                    }
+                ],
+                "fields":[
+                    {
+
+                    }
+                ]
+            }
+        ]
+    }
+}
