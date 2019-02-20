@@ -1,0 +1,80 @@
+{
+    "name": "My_SmartConnector_Dinesh",
+    "_connectorId": "",
+    "install": [{
+            "imageURI": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "name": "NetSuite-Connector Connection",
+            "description": "Please Provide Netsuite Credentials",
+            "installerFunction": "netsuiteInstaller",
+            "_connectionId": ""
+        },
+        {
+            "imageURI": "/images/company-logos/ftp.png",
+            "completed": false,
+            "name": "FTP Connection",
+            "description": "Please Provide FTP Credentials",
+            "installerFunction": "ftpInstaller",
+            "_connectionId": ""
+        },
+        {
+            "imageURI": "/images/company-logos/webhook.png",
+            "completed": false,
+            "name": "Webhook-Connector Connection",
+            "description": "Please Provide Credentials",
+            "installerFunction": "webhookInstaller"
+        },
+        {
+            "imageURI": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "name": "NS Connection",
+            "description": "Please Provide Netsuite Credentials",
+            "installerFunction": "nsInstaller2",
+            "_connectionId": ""
+        }
+    ],
+    "mode": "install",
+    "settings": {
+        "sections": [{
+                "title": "NS-FTP-Flows",
+                "imageURI": "/images/company-logos/netsuite.png",
+                "description": "This section contains NetSuite Customers in FTP connection",
+                "columns": 1,
+                "flows": [{
+                    "_id": "",
+                    "showMapping": true,
+                    "showSchedule": true,
+                    "disabled": false
+                }]
+            },
+            {
+                "title": "Webhook-NS",
+                "description": "This section creates a custom record of customer in NetSuite",
+                "columns": 1,
+                "flows": [{
+                    "_id": "",
+                    "showMapping": true,
+                    "showSchedule": true,
+                    "disabled": false
+                }],
+                "fields": [{
+                    "label": "Sync all Zendesk Organizations as NetSuite Customers",
+                    "type": "checkbox",
+                    "name": "blahblahh",
+                    "tooltip": "If this setting is selected all Zendesk Organizations will be synced as NetSuite Customers.",
+                    "value": true
+                }]
+            }
+        ],
+        "general": {
+            "description": "This section contains setting options which impact the entire Connector.",
+            "fields": [{
+                "label": "Enable Test Mode",
+                "type": "checkbox",
+                "name": "enableTestMode",
+                "tooltip": "If you are setting up the Connector and only want few test records to sync, enable this setting. Only records which have a field pre-fixed with the Test Mode Text will be selected for syncing.",
+                "value": false
+            }]
+        }
+    }
+}
