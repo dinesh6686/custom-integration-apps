@@ -12,7 +12,7 @@ function createImpConnection(options, callback) {
                 "type": "ftp",
                 "hostURI": "ftp.celigo.com",
                 "username": "unittest@ftp.celigo.com",
-                "password": "*OrqisOBt7-{",
+                "password": "***********",
                 "port": 21
             }
         }
