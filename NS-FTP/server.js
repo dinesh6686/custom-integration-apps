@@ -1,9 +1,9 @@
 var expressExtension = require('express-integrator-extension')
 var serverFunctions = require('./serverfunctions')
-var systemToken = 'c421ab97e4ac432fa7ef14f34d2ea653'
+var systemToken = '************************'
 var options = {
     connectors: { 
-        '5c63fa1ba5e38c666351c32b': serverFunctions 
+        '*******************': serverFunctions 
     },
     systemToken : systemToken,
     port :8000
