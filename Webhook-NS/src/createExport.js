@@ -11,11 +11,11 @@ function createExport(options, callback) {
             "webhook": {
                 "provider": "custom",
                 "verify": "token",
-                "token": "123456789",
+                "token": "************",
                 "path": "token"
             },
             "sampleData": {
-                    "token": "123456789",
+                    "token": "************",
                     "subsidiary": 3,
                     "entitystatus": 13,
                     "lastname": "Venkat",

@@ -47,7 +47,7 @@ nsUninstaller.prototype.uninstallConnector = function (resource, id, callback) {
         }
 
     }
-    deleteResource(options.bearerToken, 'connectors', '5c6af51511cbbf67f57a9e96', function (err, response) {
+    deleteResource(options.bearerToken, 'connectors', '********************', function (err, response) {
         if (error) {
             callback(error, null)
         } else callback(null, null)
